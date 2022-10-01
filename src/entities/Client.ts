@@ -1,28 +1,10 @@
 // entities: Create table in database
-import {Entity, BaseEntity, Column, PrimaryColumn} from "typeorm"
+import {Entity, Column, CreateDateColumn, UpdateDateColumn} from "typeorm"
+import { Person } from "./utils/Person";
 
 @Entity('client')
-export class Client extends BaseEntity {
-   @PrimaryColumn()
-   id: number
-
-   @Column()
-   first_name: string;
-
-   @Column()
-   last_name: string;
-
-   @Column({
-      unique: true // duy nhất 
-   })
-   email: string;
-
-   @Column({
-      unique: true,
-      length: 10
-   })
-   card_number: string;
-
+export class Client extends Person {
+   
    @Column({
       type: "numeric"
    })
@@ -48,4 +30,10 @@ export class Client extends BaseEntity {
       default: []
    })
    family_members: string[]
+
+   @CreateDateColumn()
+   created_at: Date;
+
+   @UpdateDateColumn()
+   updated_at: Date;
 }
