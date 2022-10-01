@@ -10,10 +10,10 @@ const main = async () => {
          password: "tptd1234560",
          database: 'typeorm'
       });
-      console.log('Connected to Postgres');
+      console.log('Connected to Postgres')
    } catch(error) {
       console.error(error);
-      throw new Error('Unable to connect to db');
+      throw new Error('Unable to connect to db')
    }
 }
-main();
+main()
