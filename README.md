@@ -1,4 +1,4 @@
-# Building database using PostgreSQL , create some source banking system
+## Building database using PostgreSQL , create some source banking system
 Download repo 
 ```
 git clone https://github.com/tuduan1902/typeorm-nodejs
