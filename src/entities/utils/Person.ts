@@ -12,9 +12,6 @@ export class Person extends BaseEntity {
    @Column()
    last_name: string;
 
-   @Column()
-   middle_name: string;
-
    @Column({
       unique: true // duy nhất 
    })
