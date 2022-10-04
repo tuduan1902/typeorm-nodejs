@@ -2,7 +2,7 @@ import {BaseEntity, Column, Entity, JoinColumn, ManyToOne, PrimaryGeneratedColum
 import { Client } from "./Client";
 
 export enum TransactionTypes {
-   DEPOSIT = 'desposit',
+   DEPOSIT = 'deposit',
    WITHDRAW = 'withdraw'
 }
 
