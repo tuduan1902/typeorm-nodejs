@@ -20,17 +20,19 @@ const main = async () => {
          entities: [Client, Banker, Transaction],
          synchronize: true  // đồng bộ hóa database
       })
-      console.log('Connected to Postgres')
-      app.use(express.json())
-      app.use(createClientRouter)
-      app.use(createBankerRouter)
+      console.log('Connected to Postgres');
+
+      app.use(express.json());
+      app.use(createClientRouter);
+      app.use(createBankerRouter);
 
       app.listen(8080, () => {
-         console.log("Now running on port 8080")
-      })
+         console.log("Now running on port 8080");
+      });
+
    } catch(error) {
       console.error(error);
-      throw new Error('Unable to connect to db')
+      throw new Error('Unable to connect to db');
    }
 }
 main()

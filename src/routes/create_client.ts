@@ -1,5 +1,5 @@
-import express from 'express';
-import { Client } from '../entities/Client';
+import express from 'express'
+import { Client } from '../entities/Client'
 const router = express.Router();
 
 router.post('/api/client', async (req,res) => {

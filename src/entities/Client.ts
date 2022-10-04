@@ -1,8 +1,8 @@
 // entities: Create table in database
 import {Entity, Column, CreateDateColumn, UpdateDateColumn, OneToMany, ManyToMany} from "typeorm"
-import { Transaction } from "./Transaction";
-import { Person } from "./utils/Person";
-import { Banker } from "./Banker";
+import { Transaction } from "./Transaction"
+import { Person } from "./utils/Person"
+import { Banker } from "./Banker"
 
 @Entity('client')
 export class Client extends Person {
