@@ -32,5 +32,4 @@ export class Transaction extends BaseEntity {
    })
    client: Client
 
-
 }
